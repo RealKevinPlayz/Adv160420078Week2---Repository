@@ -4,57 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameFragment">
+    tools:context=".ResultFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txtTurn"
+            android:id="@+id/lblGameOver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:text="Player's Turn"
+            android:layout_marginTop="84dp"
+            android:text="GAME OVER"
+            android:textColor="#000000"
+            android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Submit Answer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtAnswer" />
-
         <TextView
-            android:id="@+id/txtQuestion"
+            android:id="@+id/lblScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="X + Y"
-            android:textSize="34sp"
+            android:text="Your Score is X"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtTurn" />
+            app:layout_constraintTop_toBottomOf="@+id/lblGameOver" />
 
-        <EditText
-            android:id="@+id/txtAnswer"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="40dp"
+        <Button
+            android:id="@+id/btnBackToMainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="40dp"
-            android:ems="10"
-            android:hint="Your Answer Here"
-            android:inputType="number"
+            android:text="Back To Main Menu"
+            app:icon="@drawable/back_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
-
+            app:layout_constraintTop_toBottomOf="@+id/lblScore" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
