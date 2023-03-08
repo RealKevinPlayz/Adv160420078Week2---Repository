@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId "id.ac.ubaya.informatika.adv160420078week2"
         minSdk 31
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
