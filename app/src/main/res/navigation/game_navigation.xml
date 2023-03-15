@@ -35,7 +35,8 @@
         tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/actionMainFragment"
-            app:destination="@id/mainFragment" />
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
         <argument
             android:name="player_score"
             app:argType="integer" />
